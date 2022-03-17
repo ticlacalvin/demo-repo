@@ -1,4 +1,5 @@
-Example of an array loop
+#!/bin/bash
+# Example of an array loop
 arr=( "apple" "banana" "coco" )
 for item in "${arr[@]}" 
 do
