@@ -1,4 +1,4 @@
-# this is code is about nested while loop
+# this is code is about  a nested while loop.
 var=2
 while [[ $var -lt 20 ]]
 do
