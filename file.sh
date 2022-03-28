@@ -6,5 +6,5 @@ do
 echo $item
 done
 
-#this is just for joke
+#He who knows not and knows he knows nothing is wise.
 
