@@ -1,10 +1,16 @@
 #!/bin/bash
-# Example of an array loop
-arr=( "apple" "banana" "coco" )
-for item in "${arr[@]}" 
-do
-echo $item
-done
+bucket_name=('tqa2022')
 
-#He who knows not and knows he knows nothing is wise.
+#for bucketname in "$bucket_name"
+for bucketname in ${bucket_name[*]}
+
+do
+	echo "check every name in new line if already exists"
+	aws s3api wait bucket-exists --bucket $bucket_name
+
+#in case that name is not owned then;
+
+	echo "creating a bucket with a name from the list"
+       	aws s3 mb s3://"$bucket_name"
+done
 
