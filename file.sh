@@ -13,4 +13,5 @@ do
 	echo "creating a bucket with a name from the list"
        	aws s3 mb s3://"$bucket_name"
 done
+#watch this only
 
